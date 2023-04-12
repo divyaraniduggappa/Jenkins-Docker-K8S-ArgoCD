@@ -8,6 +8,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
+                sh "checking"
                 git branch: 'main', url: 'https://github.com/divyaraniduggappa/Jenkins-Docker-K8S-ArgoCD.git'
             }
          }
